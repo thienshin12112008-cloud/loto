@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loto Ngày Tết</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loto Ngày Tết</h1>
+        
+        <div class="controls">
+            <button onclick="generateCard()">Tạo Vé Mới</button>
+            <a href="quay-so.html" style="padding: 12px 24px; background: linear-gradient(135deg, #e17055 0%, #d63031 100%); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; box-shadow: 0 4px 15px rgba(225, 112, 85, 0.4); transition: all 0.3s;">Quay Số →</a>
+        </div>
+
+        <div id="lotoCard" class="loto-card">
+            <div class="card-section">
+                <table class="loto-table" id="table1"></table>
+            </div>
+
+            <div class="card-section">
+                <table class="loto-table" id="table2"></table>
+            </div>
+
+            <div class="card-section">
+                <table class="loto-table" id="table3"></table>
+            </div>
+
+            <div class="card-section">
+                <table class="loto-table" id="table4"></table>
+            </div>
+            
+            <div class="designer-credit">Thiết kế bởi Tr.Cường</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
