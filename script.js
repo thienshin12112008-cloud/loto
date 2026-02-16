@@ -127,6 +127,38 @@ function generateCard() {
     createTable('table4', 3, 5, numberPools);
 }
 
+// Tạo vé lần 2
+function generateSecondCard() {
+    const card2 = document.getElementById('lotoCard2');
+    
+    // Hiển thị vé lần 2
+    card2.style.display = 'block';
+    
+    // Chọn màu ngẫu nhiên cho vé lần 2 (khác với vé 1)
+    const colors = ['color-red', 'color-green', 'color-yellow', 'color-purple', 'color-blue', 'color-pink', 'color-orange'];
+    const card1 = document.getElementById('lotoCard');
+    const card1Color = colors.find(color => card1.classList.contains(color));
+    
+    // Lọc bỏ màu của vé 1
+    const availableColors = colors.filter(color => color !== card1Color);
+    const randomColor = availableColors[Math.floor(Math.random() * availableColors.length)];
+    
+    // Xóa tất cả class màu cũ
+    colors.forEach(color => card2.classList.remove(color));
+    
+    // Thêm màu mới
+    card2.classList.add(randomColor);
+    
+    // Tạo pool số cho vé lần 2
+    const numberPools = createNumberPools();
+    
+    // Tạo 4 bảng cho vé lần 2
+    createTable('table5', 3, 5, numberPools);
+    createTable('table6', 3, 5, numberPools);
+    createTable('table7', 3, 5, numberPools);
+    createTable('table8', 3, 5, numberPools);
+}
+
 // Tạo vé mặc định khi load trang
 window.onload = function() {
     generateCard();

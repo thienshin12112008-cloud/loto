@@ -12,27 +12,52 @@
         
         <div class="controls">
             <button onclick="generateCard()">Tạo Vé Mới</button>
+            <button onclick="generateSecondCard()">Tạo Vé Lần 2</button>
             <a href="quay-so.html" style="padding: 12px 24px; background: linear-gradient(135deg, #e17055 0%, #d63031 100%); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; box-shadow: 0 4px 15px rgba(225, 112, 85, 0.4); transition: all 0.3s;">Quay Số →</a>
         </div>
 
-        <div id="lotoCard" class="loto-card">
-            <div class="card-section">
-                <table class="loto-table" id="table1"></table>
+        <div class="cards-container">
+            <div id="lotoCard" class="loto-card">
+                <div class="card-header">Vé Số 1</div>
+                <div class="card-section">
+                    <table class="loto-table" id="table1"></table>
+                </div>
+
+                <div class="card-section">
+                    <table class="loto-table" id="table2"></table>
+                </div>
+
+                <div class="card-section">
+                    <table class="loto-table" id="table3"></table>
+                </div>
+
+                <div class="card-section">
+                    <table class="loto-table" id="table4"></table>
+                </div>
+                
+                <div class="designer-credit">Thiết kế bởi Tr.Cường</div>
             </div>
 
-            <div class="card-section">
-                <table class="loto-table" id="table2"></table>
-            </div>
+            <div id="lotoCard2" class="loto-card" style="display: none;">
+                <div class="card-header">Vé Số 2</div>
+                <div class="card-section">
+                    <table class="loto-table" id="table5"></table>
+                </div>
 
-            <div class="card-section">
-                <table class="loto-table" id="table3"></table>
-            </div>
+                <div class="card-section">
+                    <table class="loto-table" id="table6"></table>
+                </div>
 
-            <div class="card-section">
-                <table class="loto-table" id="table4"></table>
+                <div class="card-section">
+                    <table class="loto-table" id="table7"></table>
+                </div>
+
+                <div class="card-section">
+                    <table class="loto-table" id="table8"></table>
+                </div>
+                
+                <div class="designer-credit">Thiết kế bởi Tr.Cường</div>
             </div>
-            
-            <div class="designer-credit">Thiết kế bởi Tr.Cường</div>
         </div>
     </div>
 
