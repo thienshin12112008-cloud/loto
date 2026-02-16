@@ -52,7 +52,7 @@ function resetGame() {
     // Tự động bắt đầu quay sau 1 giây
     setTimeout(() => {
         startAutoPlay();
-    }, 1000);
+    }, 10000);
 }
 
 // Quay số

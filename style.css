@@ -20,8 +20,34 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1800px;
     margin: 0 auto;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 1400px) {
+    .cards-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card-header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    color: #2d3436;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(253, 203, 110, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h1 {
@@ -328,6 +354,16 @@ h1 {
     .controls a {
         padding: 12px 30px;
         font-size: 16px;
+    }
+    
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-header {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 15px;
     }
     
     .loto-card {
